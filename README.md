@@ -83,4 +83,4 @@ Feel free to fork this repository, make your changes, and submit a pull request.
 
 ## License
 
-This project is licensed under the MIT License.
+This is our 435L course project, you can use it freely :) 
