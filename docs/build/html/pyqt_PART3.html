@@ -1,0 +1,388 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>PyQt PART3 Module &mdash; PyQt GUI 1 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/custom.css?v=a4447120" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=29a6c3e3"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Welcome to PyQt Project’s documentation!" href="index.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            PyQt GUI
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="current reference internal" href="#">PyQt PART3 Module</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#pyqt_PART3.MainWindow"><code class="docutils literal notranslate"><span class="pre">MainWindow</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.available_courses"><code class="docutils literal notranslate"><span class="pre">MainWindow.available_courses</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.instructors"><code class="docutils literal notranslate"><span class="pre">MainWindow.instructors</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.students"><code class="docutils literal notranslate"><span class="pre">MainWindow.students</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.addCourse"><code class="docutils literal notranslate"><span class="pre">MainWindow.addCourse()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.addInstructor"><code class="docutils literal notranslate"><span class="pre">MainWindow.addInstructor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.addStudent"><code class="docutils literal notranslate"><span class="pre">MainWindow.addStudent()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.createCourseForm"><code class="docutils literal notranslate"><span class="pre">MainWindow.createCourseForm()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.createInstructorForm"><code class="docutils literal notranslate"><span class="pre">MainWindow.createInstructorForm()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.createRecordDisplay"><code class="docutils literal notranslate"><span class="pre">MainWindow.createRecordDisplay()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.createStudentForm"><code class="docutils literal notranslate"><span class="pre">MainWindow.createStudentForm()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.deleteRecord"><code class="docutils literal notranslate"><span class="pre">MainWindow.deleteRecord()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.editRecord"><code class="docutils literal notranslate"><span class="pre">MainWindow.editRecord()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.export_to_csv"><code class="docutils literal notranslate"><span class="pre">MainWindow.export_to_csv()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.initUI"><code class="docutils literal notranslate"><span class="pre">MainWindow.initUI()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.loadData"><code class="docutils literal notranslate"><span class="pre">MainWindow.loadData()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.saveData"><code class="docutils literal notranslate"><span class="pre">MainWindow.saveData()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.searchRecords"><code class="docutils literal notranslate"><span class="pre">MainWindow.searchRecords()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.updateCourseDropdown"><code class="docutils literal notranslate"><span class="pre">MainWindow.updateCourseDropdown()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#pyqt_PART3.MainWindow.updateRecordDisplay"><code class="docutils literal notranslate"><span class="pre">MainWindow.updateRecordDisplay()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">PyQt GUI</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">PyQt PART3 Module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/pyqt_PART3.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-pyqt_PART3">
+<span id="pyqt-part3-module"></span><h1>PyQt PART3 Module<a class="headerlink" href="#module-pyqt_PART3" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">pyqt_PART3.</span></span><span class="sig-name descname"><span class="pre">MainWindow</span></span><a class="headerlink" href="#pyqt_PART3.MainWindow" title="Link to this definition"></a></dt>
+<dd><p>Bases: <code class="xref py py-class docutils literal notranslate"><span class="pre">QMainWindow</span></code></p>
+<p>Main window for the School Management System.</p>
+<p>This class provides the main interface for managing students, instructors,
+courses, and school records. It includes functionality for adding, displaying,
+editing, and saving data.</p>
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.available_courses">
+<span class="sig-name descname"><span class="pre">available_courses</span></span><a class="headerlink" href="#pyqt_PART3.MainWindow.available_courses" title="Link to this definition"></a></dt>
+<dd><p>A list of available courses.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.instructors">
+<span class="sig-name descname"><span class="pre">instructors</span></span><a class="headerlink" href="#pyqt_PART3.MainWindow.instructors" title="Link to this definition"></a></dt>
+<dd><p>A list of instructor objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py attribute">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.students">
+<span class="sig-name descname"><span class="pre">students</span></span><a class="headerlink" href="#pyqt_PART3.MainWindow.students" title="Link to this definition"></a></dt>
+<dd><p>A list of student objects.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Type<span class="colon">:</span></dt>
+<dd class="field-odd"><p>list</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.addCourse">
+<span class="sig-name descname"><span class="pre">addCourse</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.addCourse" title="Link to this definition"></a></dt>
+<dd><p>Adds a new course to the available courses list based on the input from the form.</p>
+<p>This method retrieves the course details (course ID, course name, instructor, and
+enrolled students) from the input form, creates the course, and assigns the students
+to it.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If any required field is missing or invalid.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.addInstructor">
+<span class="sig-name descname"><span class="pre">addInstructor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.addInstructor" title="Link to this definition"></a></dt>
+<dd><p>Adds a new instructor to the list based on the input from the form.</p>
+<p>This method retrieves the instructor’s details from the input form (name, age,
+email, instructor ID, and assigned course) and adds the instructor to the
+<cite>instructors</cite> list. It also assigns the instructor to a course.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If any required field is missing or invalid.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.addStudent">
+<span class="sig-name descname"><span class="pre">addStudent</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.addStudent" title="Link to this definition"></a></dt>
+<dd><p>Adds a new student to the list based on the input from the form.</p>
+<p>This method retrieves the student’s details from the input form (name, age, email,
+student ID, and selected course) and adds the student to the <cite>students</cite> list. It
+also displays a success message upon completion.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>ValueError</strong> – If any required field is missing or invalid.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.createCourseForm">
+<span class="sig-name descname"><span class="pre">createCourseForm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.createCourseForm" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for adding course details.</p>
+<p>This method sets up the input fields for adding a new course, including
+fields for course ID, course name, instructor, and enrolled students.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The widget containing the course form layout.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>QWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.createInstructorForm">
+<span class="sig-name descname"><span class="pre">createInstructorForm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.createInstructorForm" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for adding instructor details.</p>
+<p>This method sets up the input fields for adding a new instructor, including
+fields for name, age, email, and instructor ID. A dropdown allows for assigning
+the instructor to a course.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The widget containing the instructor form layout.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>QWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.createRecordDisplay">
+<span class="sig-name descname"><span class="pre">createRecordDisplay</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.createRecordDisplay" title="Link to this definition"></a></dt>
+<dd><p>Creates and returns the layout for displaying and managing records.</p>
+<p>This method sets up the layout containing the search field, buttons to edit
+and delete records, and the table widget that displays the records.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The widget containing the record management interface.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>QWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.createStudentForm">
+<span class="sig-name descname"><span class="pre">createStudentForm</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.createStudentForm" title="Link to this definition"></a></dt>
+<dd><p>Creates the form for adding student details.</p>
+<p>This method sets up the input fields for adding a new student, including
+fields for name, age, email, and student ID. A dropdown allows for selecting
+a course the student will be registered for.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Returns<span class="colon">:</span></dt>
+<dd class="field-odd"><p>The widget containing the student form layout.</p>
+</dd>
+<dt class="field-even">Return type<span class="colon">:</span></dt>
+<dd class="field-even"><p>QWidget</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.deleteRecord">
+<span class="sig-name descname"><span class="pre">deleteRecord</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.deleteRecord" title="Link to this definition"></a></dt>
+<dd><p>Deletes the selected student or instructor record from the list.</p>
+<p>This method removes the selected record from either the <cite>students</cite> or <cite>instructors</cite> list
+and updates the table widget to reflect the changes.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.editRecord">
+<span class="sig-name descname"><span class="pre">editRecord</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.editRecord" title="Link to this definition"></a></dt>
+<dd><p>Allows the user to edit the selected student or instructor record.</p>
+<p>This method retrieves the selected record from the table, opens a dialog for the user
+to update the details (name, age, email), and updates the record upon confirmation.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.export_to_csv">
+<span class="sig-name descname"><span class="pre">export_to_csv</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.export_to_csv" title="Link to this definition"></a></dt>
+<dd><p>Exports the current school data to a CSV file.</p>
+<p>This method allows the user to save the student, instructor, and course
+records into a CSV file, with each type of data written into a separate row.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Exception</strong> – If an error occurs during the exporting process.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.initUI">
+<span class="sig-name descname"><span class="pre">initUI</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.initUI" title="Link to this definition"></a></dt>
+<dd><p>Sets up the user interface of the application.</p>
+<p>This method creates the main layout of the window, including tabs for
+student, instructor, and course management. It also adds buttons for
+saving, loading, and exporting data.</p>
+<dl class="simple">
+<dt>Tabs:</dt><dd><ul class="simple">
+<li><p>Student: Form to add student data.</p></li>
+<li><p>Instructor: Form to add instructor data.</p></li>
+<li><p>Course: Form to add course data.</p></li>
+<li><p>Records: Displays school records.</p></li>
+</ul>
+</dd>
+<dt>Buttons:</dt><dd><ul class="simple">
+<li><p>Save Data: Saves current data to a file.</p></li>
+<li><p>Load Data: Loads data from a file.</p></li>
+<li><p>Export to CSV: Exports current data to a CSV file.</p></li>
+</ul>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.loadData">
+<span class="sig-name descname"><span class="pre">loadData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.loadData" title="Link to this definition"></a></dt>
+<dd><p>Loads data from a JSON file.</p>
+<p>This method reads a JSON file selected by the user and populates the application’s
+records with the loaded data. The data is applied to the student, instructor, and course lists,
+and the interface is updated to reflect the new state.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Exception</strong> – If an error occurs during the file read operation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.saveData">
+<span class="sig-name descname"><span class="pre">saveData</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.saveData" title="Link to this definition"></a></dt>
+<dd><p>Saves the current data to a JSON file.</p>
+<p>This method collects the student, instructor, and course records from the application’s
+lists and serializes them into a JSON file. It handles any file I/O exceptions that may occur
+and notifies the user upon success or failure.</p>
+<dl class="field-list simple">
+<dt class="field-odd">Raises<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>Exception</strong> – If an error occurs during the file save operation.</p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.searchRecords">
+<span class="sig-name descname"><span class="pre">searchRecords</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.searchRecords" title="Link to this definition"></a></dt>
+<dd><p>Searches through the student, instructor, and course records based on the search term.</p>
+<p>This method filters the records to display only those that match the search term
+(either by name, ID, or course). The matching records are displayed in the table widget.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.updateCourseDropdown">
+<span class="sig-name descname"><span class="pre">updateCourseDropdown</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.updateCourseDropdown" title="Link to this definition"></a></dt>
+<dd><p>Updates the dropdown menus for course selection in the student and instructor forms.</p>
+<p>This method clears the existing dropdown items and populates them with the current
+list of available courses. If the dropdowns already exist, it updates them.</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="pyqt_PART3.MainWindow.updateRecordDisplay">
+<span class="sig-name descname"><span class="pre">updateRecordDisplay</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#pyqt_PART3.MainWindow.updateRecordDisplay" title="Link to this definition"></a></dt>
+<dd><p>Updates the table widget to display the current student, instructor, and course records.</p>
+<p>This method clears the table widget and repopulates it with the latest records from
+the <cite>students</cite>, <cite>instructors</cite>, and <cite>available_courses</cite> lists.</p>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="index.html" class="btn btn-neutral float-left" title="Welcome to PyQt Project’s documentation!" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2024, Mohamad Baghdadi.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
